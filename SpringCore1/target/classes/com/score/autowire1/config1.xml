@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 
+  <bean class="com.score.autowire1.Answer" name="answer" >
+  <property name="ans1" value="java is a platform independent"></property>
+  <property name="ans2" value="java is robust language"></property>
+  <property name="ans3" value="spring is a framework of java enterprise"></property>
+  </bean>
+  
+  <bean class="com.score.autowire1.Question" name="q1" autowire="byType">
+  <property name="que1" value="what is java?"></property>
+  
+  </bean>
+</beans>
+

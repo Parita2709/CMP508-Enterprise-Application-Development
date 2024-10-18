@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 
+    <bean class="com.springcore.Student" id="student1">
+    	<property name="Sid">
+    		<value>223456</value>
+    	</property>    	
+    	<property name="Sname">
+    		<value>Ajin</value>
+    	</property>
+    	
+    </bean>
+    
+       <bean class="com.springcore.CI.Person" id="person1">
+       	<constructor-arg value="101" type="int"></constructor-arg>
+       	<constructor-arg value="DARSHANA MAKANI"></constructor-arg>
+       
+       </bean>
+</beans>
+

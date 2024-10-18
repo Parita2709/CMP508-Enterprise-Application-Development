@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.sprincore.collection.Employee" name="emp">
+ 
+ 
+ <property name="name" value="darshana"></property>
+ 	
+ 	<property name="phone">
+ 	    <list>
+			<value>9456783822</value> 	  
+			<value>9988776655</value>  
+ 	    </list>
+ 	</property>
+ 	
+ 	<property name="address">
+ 	    <set>
+			<value>Rajkot</value> 	  
+			<value>vasna-bhayli road</value>  
+ 	    </set>
+ 	</property>
+ 	
+ 	<property name="courses">
+ 	    <map>
+			<entry key="java" value="2month"></entry>
+			<entry key="python" value="1 month"></entry>
+ 	    </map>
+ 	</property>
+</bean>
+</beans>
